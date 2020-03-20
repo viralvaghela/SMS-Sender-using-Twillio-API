@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="347.0" prefWidth="378.0" style="-fx-background-color: #08415C;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="application.MainController">
+   <children>
+      <JFXTextArea fx:id="txtMessage" focusColor="#e83f6f" labelFloat="true" layoutX="20.0" layoutY="31.0" prefHeight="227.0" prefWidth="330.0" promptText="Enter Message" style="-fx-background-color: #2A9D8F;" unFocusColor="#cdcdcd" wrapText="true">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton fx:id="btnSend" buttonType="RAISED" layoutX="73.0" layoutY="281.0" onAction="#sendSMS" prefHeight="42.0" prefWidth="230.0" style="-fx-background-color: #E83F6F;" text="Send" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
