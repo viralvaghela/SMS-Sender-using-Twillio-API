@@ -12,8 +12,8 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 public class MainController 
 {
-	public static final String ACCOUNT_SID = "ACf00475e29742afc5ce82a2a275871485";
-    public static final String AUTH_TOKEN = "a0ec73496ae548ae5c2b4552e59fca16";
+	public static final String ACCOUNT_SID = "XXX"; //visit www.twilio.com
+    public static final String AUTH_TOKEN = "XXX";  //visit www.twilio.com
 
     @FXML
     private JFXTextArea txtMessage;
@@ -25,14 +25,12 @@ public class MainController
     
     @FXML
     void sendSMS(ActionEvent event) {
-
-    	
     	try {
     	
     		Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
     		 Message message = Message
-    	                .creator(new PhoneNumber("+917043255704"), // to
-    	                        new PhoneNumber("+12038725652"), // from
+    	                .creator(new PhoneNumber("+91XXXXXXXXXX"), // to
+    	                        new PhoneNumber("+1XXXXXXXXXX"), // from
     	                        txtMessage.getText().toString())
     	                .create();
     		
